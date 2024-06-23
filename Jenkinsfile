@@ -15,6 +15,7 @@ pipeline {
                 script {
                     sh 'docker build -t naresh2603/multi:v1 .'
                     sh 'docker images'
+		    sh 'docker run -itd --name Javacon -P naresh2603/multi'
 		    sh 'docker ps'
                 }
             }
