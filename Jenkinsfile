@@ -13,9 +13,9 @@ pipeline {
         stage('Docker Build Images') {
             steps {
                 script {
-                    sh 'docker build -t naresh2603/multi:v1 .'
+                    sh 'docker build -t venkateshvgs/multi:v1 .'
                     sh 'docker images'
-		    sh 'docker run -itd --name Javacon -P naresh2603/multi:v1'
+		    sh 'docker run -itd --name Javacon -P venkateshvgs/multi:v1'
 		    sh 'docker ps'
                 }
             }
