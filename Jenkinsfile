@@ -15,8 +15,8 @@ pipeline {
                 script {
                     sh 'docker build -t venkateshvgs/multi:v1 .'
                     sh 'docker images'
-		    sh 'docker run -itd --name Javacon -P venkateshvgs/multi:v1'
-		    sh 'docker ps'
+		    // sh 'docker run -itd --name Javacon -P venkateshvgs/multi:v1'
+		    // sh 'docker ps'
                 }
             }
         }
