@@ -15,6 +15,7 @@ pipeline {
                 script {
                     sh 'docker build -t venkateshvgs/multi:v3 .'
                     sh 'docker images'
+                    // hi
                 }
             }
         }
